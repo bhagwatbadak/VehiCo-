@@ -6,5 +6,5 @@ bhagwat badak
 # student 
 delta alfa beta gamma 
 
-#manager
+# manager
 sanket badakh
