@@ -1,386 +1,537 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoMob 24/7 — We Care About Your Automobile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+</head>
+<body>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "surface-container-high": "#e7e8ea",
-                    "on-secondary": "#ffffff",
-                    "on-secondary-fixed": "#2c1600",
-                    "primary-fixed": "#d6e4f9",
-                    "outline": "#74777d",
-                    "on-primary": "#ffffff",
-                    "on-primary-container": "#778598",
-                    "on-error": "#ffffff",
-                    "on-tertiary-fixed": "#261a00",
-                    "surface-container-lowest": "#ffffff",
-                    "error-container": "#ffdad6",
-                    "on-tertiary": "#ffffff",
-                    "on-background": "#191c1e",
-                    "on-tertiary-container": "#a77d00",
-                    "on-error-container": "#93000a",
-                    "surface-dim": "#d9dadc",
-                    "error": "#ba1a1a",
-                    "surface-container-highest": "#e1e2e4",
-                    "secondary-fixed": "#ffdcbe",
-                    "on-surface": "#191c1e",
-                    "secondary-fixed-dim": "#ffb870",
-                    "tertiary": "#000000",
-                    "surface-container-low": "#f3f4f6",
-                    "on-secondary-container": "#653900",
-                    "secondary": "#8b5000",
-                    "inverse-primary": "#bac8dc",
-                    "tertiary-fixed": "#ffdf9e",
-                    "secondary-container": "#ff9800",
-                    "on-tertiary-fixed-variant": "#5b4300",
-                    "inverse-on-surface": "#f0f1f3",
-                    "background": "#f8f9fb",
-                    "on-primary-fixed": "#0f1c2c",
-                    "tertiary-fixed-dim": "#fabd00",
-                    "on-surface-variant": "#44474c",
-                    "surface-tint": "#525f71",
-                    "tertiary-container": "#261a00",
-                    "primary": "#000000",
-                    "on-secondary-fixed-variant": "#693c00",
-                    "surface": "#f8f9fb",
-                    "primary-container": "#0f1c2c",
-                    "outline-variant": "#c4c6cc",
-                    "surface-bright": "#f8f9fb",
-                    "inverse-surface": "#2e3132",
-                    "on-primary-fixed-variant": "#3a4859",
-                    "surface-variant": "#e1e2e4",
-                    "surface-container": "#edeef0",
-                    "primary-fixed-dim": "#bac8dc"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "fontFamily": {
-                    "headline": ["Plus Jakarta Sans"],
-                    "body": ["Inter"],
-                    "label": ["Inter"]
-            }
-          },
-        },
-      }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .editorial-asymmetry {
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-        }
-        .glass-panel {
-            background: rgba(15, 28, 44, 0.6);
-            backdrop-filter: blur(20px);
-        }
-    </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
-<body class="bg-background text-on-background font-body selection:bg-secondary-container">
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl flex justify-between items-center px-8 py-6 max-w-full shadow-2xl shadow-black/20">
-<div class="text-2xl font-black italic text-slate-50 font-headline uppercase tracking-tight">Precision Editorial</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="text-slate-50 font-bold border-b-2 border-amber-600 font-label uppercase text-xs tracking-widest transition-colors hover:text-amber-500" href="#">Home</a>
-<a class="text-slate-400 font-medium font-label uppercase text-xs tracking-widest transition-colors hover:text-amber-500" href="#">Services</a>
-<a class="text-slate-400 font-medium font-label uppercase text-xs tracking-widest transition-colors hover:text-amber-500" href="#">How It Works</a>
-<a class="text-slate-400 font-medium font-label uppercase text-xs tracking-widest transition-colors hover:text-amber-500" href="#">Emergency</a>
-<a class="text-slate-400 font-medium font-label uppercase text-xs tracking-widest transition-colors hover:text-amber-500" href="#">Contact</a>
-</div>
-<button class="text-slate-50 bg-primary-container px-6 py-2 rounded-md font-bold text-sm hover:text-amber-500 active:scale-95 transition-all">Login</button>
-</header>
-<main class="pt-24 pb-32">
-<!-- Hero Section -->
-<section class="relative min-h-[751px] flex items-center overflow-hidden mb-16">
-<div class="absolute inset-0 z-0">
-<img alt="Luxury Car Service" class="w-full h-full object-cover" data-alt="Close-up of a high-end black sports car being serviced in a pristine modern workshop with dramatic overhead lighting and metallic reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwkMFsuKTYu2FajRcDPDuEZ21XqqyDypXEi119zpjvcv04rS2dpY3a3evMzO7eaM5YvdZQakv_46Wuh8EawBnT7jLXZ258B_f5seJE0UPTfWOydSasAygSWhqra3lmyx0e_OmpozvgV7aRmk-wvDJVwmH7DmAZu4fZhrsE4uhhKSivh22csdpXv4IqIMwvjPt5kVt199xFOadebyXcBhEAhg-det_OT9spyHNhkJf_Ui5ysrlHLSYGInGnlmcMqs7BQmgYFqoxMXM"/>
-<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
-</div>
-<div class="container mx-auto px-6 relative z-10 grid md:grid-cols-12 gap-8">
-<div class="md:col-span-8 space-y-8">
-<span class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container font-label text-[10px] uppercase font-black tracking-[0.2em] rounded-full">Elite Automotive Care</span>
-<h1 class="text-slate-50 font-headline text-5xl md:text-7xl font-extrabold uppercase leading-[0.95] tracking-tighter">
-                        All-in-One <br/><span class="text-secondary-container">Car Service</span> <br/>&amp; Towing
-                    </h1>
-<p class="text-slate-300 max-w-lg text-lg font-light leading-relaxed">
-                        High-performance maintenance and 24/7 roadside assistance at the push of a button. Near you, whenever you need it.
-                    </p>
-<div class="flex flex-col sm:flex-row gap-4 pt-4">
-<button class="bg-gradient-to-br from-secondary to-secondary-container text-on-secondary px-8 py-4 rounded-md font-bold text-sm tracking-widest uppercase shadow-xl shadow-secondary/20 active:scale-95 transition-transform">Customer Login</button>
-<div class="flex gap-2">
-<button class="bg-slate-50/10 backdrop-blur-md text-slate-50 px-6 py-4 rounded-md font-bold text-[10px] tracking-widest uppercase border border-slate-50/20 hover:bg-slate-50/20 transition-colors">Service Provider</button>
-<button class="bg-slate-50/10 backdrop-blur-md text-slate-50 px-6 py-4 rounded-md font-bold text-[10px] tracking-widest uppercase border border-slate-50/20 hover:bg-slate-50/20 transition-colors">Tow Provider</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Search Section -->
-<section class="container mx-auto px-6 -mt-32 relative z-20 mb-20">
-<div class="bg-surface-container-lowest p-2 rounded-xl shadow-2xl flex flex-col md:flex-row items-center gap-2">
-<div class="flex-1 w-full flex items-center px-6 py-4 gap-4">
-<span class="material-symbols-outlined text-surface-tint">search</span>
-<input class="w-full bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-outline/60 font-medium" placeholder="Find nearby garages, car washing services, or tow trucks" type="text"/>
-</div>
-<div class="w-full md:w-auto flex flex-col md:flex-row gap-2 p-2">
-<button class="flex items-center justify-center gap-2 px-6 py-4 bg-surface-container-high text-on-surface font-bold text-xs uppercase tracking-widest rounded-lg hover:bg-surface-container-highest transition-colors">
-<span class="material-symbols-outlined text-lg">my_location</span>
-                        Detect Location
-                    </button>
-<button class="px-10 py-4 bg-primary text-on-primary font-bold text-xs uppercase tracking-widest rounded-lg hover:opacity-90 active:scale-95 transition-all">Search Now</button>
-</div>
-</div>
-</section>
-<!-- Services Bento Grid -->
-<section class="container mx-auto px-6 mb-24">
-<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
-<div class="max-w-xl">
-<h2 class="text-4xl font-headline font-extrabold uppercase tracking-tighter text-primary">Signature Services</h2>
-<p class="text-on-surface-variant font-medium mt-2">Precision care for every mile of your journey.</p>
-</div>
-<div class="h-px bg-outline-variant flex-grow mx-8 hidden md:block"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
-<div class="md:col-span-4 bg-surface-container-low rounded-3xl p-8 flex flex-col justify-between group overflow-hidden relative">
-<div class="z-10">
-<span class="material-symbols-outlined text-4xl text-primary mb-4">build</span>
-<h3 class="text-2xl font-headline font-extrabold uppercase mb-2">Car Repair</h3>
-<p class="text-on-surface-variant text-sm">Certified mechanical diagnostics and repair solutions.</p>
-</div>
-<div class="absolute bottom-[-20px] right-[-20px] opacity-10 group-hover:opacity-20 transition-opacity">
-<span class="material-symbols-outlined text-[160px]">settings</span>
-</div>
-<a class="z-10 text-xs font-black uppercase tracking-[0.2em] flex items-center gap-2 hover:gap-4 transition-all" href="#">Explore Service <span class="material-symbols-outlined">arrow_forward</span></a>
-</div>
-<div class="md:col-span-4 bg-surface-container-low rounded-3xl p-8 flex flex-col justify-between group overflow-hidden relative">
-<div class="z-10">
-<span class="material-symbols-outlined text-4xl text-primary mb-4">local_car_wash</span>
-<h3 class="text-2xl font-headline font-extrabold uppercase mb-2">Car Washing</h3>
-<p class="text-on-surface-variant text-sm">Premium detailing and ecological cleaning systems.</p>
-</div>
-<div class="absolute bottom-[-20px] right-[-20px] opacity-10 group-hover:opacity-20 transition-opacity">
-<span class="material-symbols-outlined text-[160px]">water_drop</span>
-</div>
-<a class="z-10 text-xs font-black uppercase tracking-[0.2em] flex items-center gap-2 hover:gap-4 transition-all" href="#">Book Session <span class="material-symbols-outlined">arrow_forward</span></a>
-</div>
-<div class="md:col-span-4 md:row-span-2 bg-secondary-container rounded-3xl p-10 flex flex-col justify-between relative overflow-hidden text-on-secondary-container shadow-2xl shadow-secondary/30">
-<div class="absolute top-0 right-0 p-6">
-<span class="inline-block bg-primary text-on-primary px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Priority</span>
-</div>
-<div class="z-10">
-<span class="material-symbols-outlined text-6xl mb-6" data-weight="fill">tire_repair</span>
-<h3 class="text-4xl font-headline font-extrabold uppercase leading-none mb-4">Emergency<br/>Towing</h3>
-<p class="font-medium opacity-80 mb-8 max-w-xs">On-demand heavy-duty recovery. Available 24/7 across the metropolitan area.</p>
-<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-black text-xs uppercase tracking-[0.2em] shadow-lg active:scale-95 transition-all">Request Tow Now</button>
-</div>
-<div class="absolute bottom-[-40px] right-[-40px] opacity-30">
-<span class="material-symbols-outlined text-[240px]">auto_towing</span>
-</div>
-</div>
-<div class="md:col-span-8 bg-surface-container-low rounded-3xl p-8 flex flex-col md:flex-row justify-between items-center group relative overflow-hidden">
-<div class="md:w-1/2 space-y-4">
-<span class="material-symbols-outlined text-4xl text-primary">minor_crash</span>
-<h3 class="text-2xl font-headline font-extrabold uppercase">Roadside Assistance</h3>
-<p class="text-on-surface-variant text-sm">Battery jump-starts, tire changes, and fuel delivery at your location.</p>
-<a class="text-xs font-black uppercase tracking-[0.2em] flex items-center gap-2 hover:gap-4 transition-all" href="#">Get Help Now <span class="material-symbols-outlined">arrow_forward</span></a>
-</div>
-<div class="md:w-1/2 flex justify-end mt-8 md:mt-0">
-<img alt="Technician helping driver" class="w-48 h-48 object-cover rounded-2xl transform group-hover:rotate-3 transition-transform" data-alt="Professional automobile technician in a clean uniform assisting a driver on the side of a modern highway under bright daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiuJ5mE0VG_vRsBMHkCwrkfVuxcPNb1t2-LtB58cBYJ1U8gJEtdbIJiBeqjsMs5MIQsX-RnL5WtVrs9mCTXQTboPkNM62gng_B0CDjE7sPGIcssNVk8IaBzTf79KAfBtUxzci4-9AEZDd1vRDpPDnESEcO03BKysUN8Lt2qngAuKUZS9hK7M-5oP1M9-G01u4_FBJmmj9Tm670gwzTHh4hcGuy4ZR8GdYQIPyupJhk7PYQ8ATVOmJ2qI-lldeDScV1JzXR-qxvNdo"/>
-</div>
-</div>
-</div>
-</section>
-<!-- How It Works -->
-<section class="bg-primary-container py-24 text-slate-50 mb-24 overflow-hidden">
-<div class="container mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-headline font-extrabold uppercase tracking-tight mb-4">How It Works</h2>
-<div class="w-24 h-1 bg-secondary-container mx-auto"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
-<!-- Steps -->
-<div class="flex flex-col items-center text-center space-y-6">
-<div class="w-20 h-20 rounded-full bg-slate-900 flex items-center justify-center border-4 border-slate-800 text-secondary-container font-black text-2xl relative">
-                            01
-                            <div class="absolute -right-6 top-1/2 -translate-y-1/2 hidden md:block">
-<span class="material-symbols-outlined text-slate-800">chevron_right</span>
-</div>
-</div>
-<h4 class="font-headline font-bold uppercase tracking-widest text-sm">Login</h4>
-<p class="text-slate-400 text-xs px-4">Securely access your account or register in seconds.</p>
-</div>
-<div class="flex flex-col items-center text-center space-y-6">
-<div class="w-20 h-20 rounded-full bg-slate-900 flex items-center justify-center border-4 border-slate-800 text-secondary-container font-black text-2xl relative">
-                            02
-                            <div class="absolute -right-6 top-1/2 -translate-y-1/2 hidden md:block">
-<span class="material-symbols-outlined text-slate-800">chevron_right</span>
-</div>
-</div>
-<h4 class="font-headline font-bold uppercase tracking-widest text-sm">Share Location</h4>
-<p class="text-slate-400 text-xs px-4">Instant geolocation pinpointing for rapid response.</p>
-</div>
-<div class="flex flex-col items-center text-center space-y-6">
-<div class="w-20 h-20 rounded-full bg-slate-900 flex items-center justify-center border-4 border-slate-800 text-secondary-container font-black text-2xl relative">
-                            03
-                            <div class="absolute -right-6 top-1/2 -translate-y-1/2 hidden md:block">
-<span class="material-symbols-outlined text-slate-800">chevron_right</span>
-</div>
-</div>
-<h4 class="font-headline font-bold uppercase tracking-widest text-sm">Choose Service</h4>
-<p class="text-slate-400 text-xs px-4">Select from our elite menu of technical assistance.</p>
-</div>
-<div class="flex flex-col items-center text-center space-y-6">
-<div class="w-20 h-20 rounded-full bg-slate-900 flex items-center justify-center border-4 border-slate-800 text-secondary-container font-black text-2xl">04</div>
-<h4 class="font-headline font-bold uppercase tracking-widest text-sm">Get Help</h4>
-<p class="text-slate-400 text-xs px-4">Track your provider in real-time until arrival.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Trust & Stats -->
-<section class="container mx-auto px-6 mb-24 grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="bg-surface-container p-8 rounded-2xl flex items-center gap-6">
-<span class="material-symbols-outlined text-5xl text-secondary-container">verified_user</span>
-<div>
-<h4 class="font-headline font-bold uppercase text-sm tracking-widest">Verified Providers</h4>
-<p class="text-on-surface-variant text-xs mt-1">Every mechanic rigorously vetted for quality.</p>
-</div>
-</div>
-<div class="bg-surface-container p-8 rounded-2xl flex items-center gap-6">
-<span class="material-symbols-outlined text-5xl text-secondary-container">speed</span>
-<div>
-<h4 class="font-headline font-bold uppercase text-sm tracking-widest">Fast Response</h4>
-<p class="text-on-surface-variant text-xs mt-1">Average 25-minute arrival time in urban zones.</p>
-</div>
-</div>
-<div class="bg-surface-container p-8 rounded-2xl flex items-center gap-6">
-<span class="material-symbols-outlined text-5xl text-secondary-container">update</span>
-<div>
-<h4 class="font-headline font-bold uppercase text-sm tracking-widest">24/7 Availability</h4>
-<p class="text-on-surface-variant text-xs mt-1">We never sleep. Support available all day, every day.</p>
-</div>
-</div>
-</section>
-<!-- Emergency Quick Actions -->
-<section class="container mx-auto px-6 mb-24">
-<div class="bg-error-container text-on-error-container p-12 rounded-[2rem] flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden">
-<div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
-<div class="grid grid-cols-6 gap-4 rotate-12 scale-150">
-<span class="material-symbols-outlined text-9xl">warning</span>
-<span class="material-symbols-outlined text-9xl">emergency</span>
-<span class="material-symbols-outlined text-9xl">medical_services</span>
-</div>
-</div>
-<div class="z-10 text-center md:text-left">
-<h2 class="text-4xl font-headline font-extrabold uppercase leading-none mb-4">Critical Emergency?</h2>
-<p class="font-medium opacity-80 max-w-sm">Direct line to dispatch for immediate towing or medical mechanical assistance.</p>
-</div>
-<div class="flex flex-col sm:flex-row gap-4 z-10 w-full md:w-auto">
-<button class="flex-1 px-8 py-5 bg-error text-on-error font-black uppercase text-xs tracking-widest flex items-center justify-center gap-3 rounded-xl hover:shadow-2xl transition-all">
-<span class="material-symbols-outlined">call</span>
-                        Call Tow Service
-                    </button>
-<button class="flex-1 px-8 py-5 bg-on-error-container text-error-container font-black uppercase text-xs tracking-widest flex items-center justify-center gap-3 rounded-xl hover:shadow-2xl transition-all">
-<span class="material-symbols-outlined">person_pin_circle</span>
-                        Request Mechanic
-                    </button>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-slate-950 text-slate-50 border-t border-slate-900 w-full">
-<div class="container mx-auto flex flex-col md:flex-row justify-between items-start px-12 py-20 gap-16">
-<div class="max-w-xs space-y-6">
-<div class="text-2xl font-black italic text-slate-50 font-headline uppercase tracking-tight">Precision Editorial</div>
-<p class="text-slate-500 font-inter text-label-sm uppercase leading-relaxed">
-                    Engineering Excellence in Automotive Logistics and Roadside Concierge.
-                </p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:text-amber-500 transition-colors" href="#">
-<span class="material-symbols-outlined text-lg">public</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:text-amber-500 transition-colors" href="#">
-<span class="material-symbols-outlined text-lg">share</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:text-amber-500 transition-colors" href="#">
-<span class="material-symbols-outlined text-lg">hub</span>
-</a>
-</div>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-2 gap-16">
-<div class="space-y-6">
-<h5 class="text-amber-500 font-headline font-black uppercase text-[10px] tracking-[0.2em]">Platform</h5>
-<ul class="space-y-4">
-<li><a class="text-slate-500 font-inter text-label-sm uppercase hover:text-amber-500 transition-colors" href="#">Terms of Service</a></li>
-<li><a class="text-slate-500 font-inter text-label-sm uppercase hover:text-amber-500 transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="text-slate-500 font-inter text-label-sm uppercase hover:text-amber-500 transition-colors" href="#">Fleet Solutions</a></li>
-</ul>
-</div>
-<div class="space-y-6">
-<h5 class="text-amber-500 font-headline font-black uppercase text-[10px] tracking-[0.2em]">Quick Help</h5>
-<ul class="space-y-4">
-<li><a class="text-slate-500 font-inter text-label-sm uppercase hover:text-amber-500 transition-colors" href="#">Emergency Contact</a></li>
-<li><a class="text-slate-500 font-inter text-label-sm uppercase hover:text-amber-500 transition-colors" href="#">Find a Garage</a></li>
-<li><a class="text-slate-500 font-inter text-label-sm uppercase hover:text-amber-500 transition-colors" href="#">Tow Support</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="container mx-auto px-12 py-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4">
-<span class="font-inter text-label-sm uppercase opacity-40">© 2024 PRECISION EDITORIAL. ALL RIGHTS RESERVED.</span>
-<div class="flex gap-8">
-<span class="flex items-center gap-2 text-slate-500 font-inter text-[10px] uppercase font-bold tracking-widest"><span class="w-2 h-2 rounded-full bg-green-500"></span> Service Operational</span>
-</div>
-</div>
-</footer>
-<!-- BottomNavBar (Mobile Only) -->
-<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-lg flex justify-around items-center px-6 pb-6 pt-2 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] rounded-t-3xl">
-<a class="flex flex-col items-center justify-center bg-slate-900 text-amber-500 rounded-xl p-3 active:scale-90 duration-200" href="#">
-<span class="material-symbols-outlined" data-weight="fill">home</span>
-<span class="font-inter text-[8px] uppercase font-bold tracking-widest mt-1">Home</span>
-</a>
-<a class="flex flex-col items-center justify-center text-slate-500 p-3 hover:bg-slate-800 transition-all active:scale-90 duration-200" href="#">
-<span class="material-symbols-outlined">build</span>
-<span class="font-inter text-[8px] uppercase font-bold tracking-widest mt-1">Services</span>
-</a>
-<a class="flex flex-col items-center justify-center text-slate-500 p-3 hover:bg-slate-800 transition-all active:scale-90 duration-200" href="#">
-<span class="material-symbols-outlined">tire_repair</span>
-<span class="font-inter text-[8px] uppercase font-bold tracking-widest mt-1">Emergency</span>
-</a>
-<a class="flex flex-col items-center justify-center text-slate-500 p-3 hover:bg-slate-800 transition-all active:scale-90 duration-200" href="#">
-<span class="material-symbols-outlined">location_on</span>
-<span class="font-inter text-[8px] uppercase font-bold tracking-widest mt-1">Track</span>
-</a>
-<a class="flex flex-col items-center justify-center text-slate-500 p-3 hover:bg-slate-800 transition-all active:scale-90 duration-200" href="#">
-<span class="material-symbols-outlined">person</span>
-<span class="font-inter text-[8px] uppercase font-bold tracking-widest mt-1">Profile</span>
-</a>
-</nav>
-<!-- Floating Emergency FAB -->
-<button class="fixed bottom-24 right-6 w-16 h-16 bg-secondary-container text-on-secondary-container rounded-full shadow-2xl flex items-center justify-center z-40 active:scale-90 transition-transform md:bottom-12">
-<span class="material-symbols-outlined text-3xl" data-weight="fill">emergency_share</span>
-<span class="absolute -top-1 -right-1 flex h-5 w-5">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-<span class="relative inline-flex rounded-full h-5 w-5 bg-secondary"></span>
-</span>
-</button>
-</body></html>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">AutoMob</div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+      <div class="preloader-text">Starting Engines...</div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Top Alert Bar -->
+  <div class="alert-bar">
+    <span class="material-symbols-outlined">emergency_share</span>
+    Emergency Towing Available 24/7 — Call Now: <strong>+91 98765 43210</strong>
+    <span class="ping-dot"></span>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Auto<span class="logo-accent">Mob</span></span>
+        <span class="logo-tag">24/7</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-outline" onclick="openLoginModal('user')">Login</button>
+        <button class="btn-primary" onclick="openLoginModal('emergency')">
+          <span class="material-symbols-outlined">emergency</span> SOS
+        </button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+    <a href="#services" class="mobile-nav-link" onclick="closeMobileNav()">Services</a>
+    <a href="#how-it-works" class="mobile-nav-link" onclick="closeMobileNav()">How It Works</a>
+    <a href="#about" class="mobile-nav-link" onclick="closeMobileNav()">About</a>
+    <a href="#faq" class="mobile-nav-link" onclick="closeMobileNav()">FAQ</a>
+    <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()">Contact</a>
+    <button class="btn-primary mt-8" onclick="openLoginModal('user'); closeMobileNav()">Login</button>
+  </div>
+  <div class="overlay" id="overlay" onclick="closeMobileNav()"></div>
+
+  <main>
+
+    <!-- ══════════════════ HERO ══════════════════ -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-orb orb1"></div>
+        <div class="hero-orb orb2"></div>
+        <div class="hero-particles" id="particles"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge animate-fade-up" style="animation-delay:0.2s">
+          <span class="ping-dot"></span> Trusted by 50,000+ Automobile Owners
+        </div>
+        <h1 class="hero-title animate-fade-up" style="animation-delay:0.4s">
+          We Care About<br/>
+          <span class="hero-accent">Automobile</span><br/>
+          <span class="hero-sub">Love Gadget As Us.</span>
+        </h1>
+        <p class="hero-desc animate-fade-up" style="animation-delay:0.6s">
+          India's most reliable all-in-one car service platform. Repair, towing, washing, fuel delivery — all at your fingertips. <strong>24 hours. 7 days.</strong>
+        </p>
+
+        <!-- Login Type Cards -->
+        <div class="login-cards animate-fade-up" style="animation-delay:0.8s">
+          <button class="login-card" onclick="openLoginModal('user')">
+            <span class="material-symbols-outlined">person</span>
+            <span class="login-card-title">User Login</span>
+            <span class="login-card-sub">Book services</span>
+          </button>
+          <button class="login-card" onclick="openLoginModal('garage')">
+            <span class="material-symbols-outlined">garage</span>
+            <span class="login-card-title">Garage Login</span>
+            <span class="login-card-sub">Manage bookings</span>
+          </button>
+          <button class="login-card login-card-accent" onclick="openLoginModal('tow')">
+            <span class="material-symbols-outlined">auto_towing</span>
+            <span class="login-card-title">Tow Provider</span>
+            <span class="login-card-sub">Accept requests</span>
+          </button>
+          <button class="login-card login-card-dark" onclick="openLoginModal('admin')">
+            <span class="material-symbols-outlined">admin_panel_settings</span>
+            <span class="login-card-title">Admin Panel</span>
+            <span class="login-card-sub">Dashboard</span>
+          </button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar animate-fade-up" style="animation-delay:1s">
+          <span class="material-symbols-outlined search-icon">search</span>
+          <input type="text" class="search-input" placeholder="Find garages, tow trucks, petrol pumps near you..." />
+          <button class="search-location-btn" title="Detect Location">
+            <span class="material-symbols-outlined">my_location</span>
+          </button>
+          <button class="search-btn">Search Now</button>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+        <span>Scroll to explore</span>
+      </div>
+
+      <!-- Floating Stats -->
+      <div class="floating-stats">
+        <div class="stat-pill animate-float" style="animation-delay:0s">
+          <span class="stat-num">25min</span>
+          <span class="stat-label">Avg Response</span>
+        </div>
+        <div class="stat-pill animate-float" style="animation-delay:0.5s">
+          <span class="stat-num">50K+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-pill animate-float" style="animation-delay:1s">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Always Online</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ MARQUEE ══════════════════ -->
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>🔧 Car Repair</span><span>🚿 Car Washing</span><span>🚗 Towing</span><span>⛽ Petrol Pump</span><span>🛞 Tyre Change</span><span>🔋 Battery Jump</span><span>🔧 Car Repair</span><span>🚿 Car Washing</span><span>🚗 Towing</span><span>⛽ Petrol Pump</span><span>🛞 Tyre Change</span><span>🔋 Battery Jump</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════ SERVICES ══════════════════ -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What We Offer</span>
+          <h2 class="section-title">Services Provided <span class="accent">Multiple Like</span></h2>
+          <p class="section-desc">Reliability &amp; Secure — Every service backed by verified professionals and real-time tracking.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Car Repair -->
+          <div class="service-card" data-aos="fade-up" data-delay="0">
+            <div class="service-card-icon" style="--c:#f97316">
+              <span class="material-symbols-outlined">build</span>
+            </div>
+            <h3 class="service-card-title">Car Repair</h3>
+            <p class="service-card-desc">Certified mechanics for engine, brakes, AC, transmission and all mechanical issues.</p>
+            <div class="service-card-tags">
+              <span>Engine</span><span>Brakes</span><span>AC</span>
+            </div>
+            <a href="#" class="service-card-link">Book Now <span class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+
+          <!-- Towing — Featured -->
+          <div class="service-card service-featured" data-aos="fade-up" data-delay="100">
+            <div class="service-featured-badge">⚡ Priority</div>
+            <div class="service-card-icon" style="--c:#f59e0b">
+              <span class="material-symbols-outlined">auto_towing</span>
+            </div>
+            <h3 class="service-card-title">Emergency Towing</h3>
+            <p class="service-card-desc">On-demand heavy-duty recovery 24/7. Real-time driver tracking until arrival.</p>
+            <div class="service-card-tags">
+              <span>24/7</span><span>Real-time GPS</span><span>All Vehicles</span>
+            </div>
+            <button class="btn-primary w-full mt-4" onclick="openLoginModal('user')">Request Tow Now</button>
+          </div>
+
+          <!-- Car Washing -->
+          <div class="service-card" data-aos="fade-up" data-delay="200">
+            <div class="service-card-icon" style="--c:#06b6d4">
+              <span class="material-symbols-outlined">local_car_wash</span>
+            </div>
+            <h3 class="service-card-title">Car Washing</h3>
+            <p class="service-card-desc">Premium detailing, foam wash, interior cleaning and eco-friendly systems.</p>
+            <div class="service-card-tags">
+              <span>Foam Wash</span><span>Interior</span><span>Detailing</span>
+            </div>
+            <a href="#" class="service-card-link">Book Session <span class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+
+          <!-- Petrol Pump -->
+          <div class="service-card" data-aos="fade-up" data-delay="300">
+            <div class="service-card-icon" style="--c:#10b981">
+              <span class="material-symbols-outlined">local_gas_station</span>
+            </div>
+            <h3 class="service-card-title">Petrol Pump Locator</h3>
+            <p class="service-card-desc">Find nearest fuel stations and request emergency fuel delivery to your location.</p>
+            <div class="service-card-tags">
+              <span>Petrol</span><span>Diesel</span><span>Delivery</span>
+            </div>
+            <a href="#" class="service-card-link">Find Nearest <span class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+
+          <!-- Roadside -->
+          <div class="service-card" data-aos="fade-up" data-delay="400">
+            <div class="service-card-icon" style="--c:#8b5cf6">
+              <span class="material-symbols-outlined">minor_crash</span>
+            </div>
+            <h3 class="service-card-title">Roadside Assistance</h3>
+            <p class="service-card-desc">Battery jump-starts, tyre changes, fuel delivery wherever you are stranded.</p>
+            <div class="service-card-tags">
+              <span>Battery</span><span>Tyre</span><span>Fuel</span>
+            </div>
+            <a href="#" class="service-card-link">Get Help <span class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+
+          <!-- Happy Customs -->
+          <div class="service-card" data-aos="fade-up" data-delay="500">
+            <div class="service-card-icon" style="--c:#ec4899">
+              <span class="material-symbols-outlined">auto_awesome</span>
+            </div>
+            <h3 class="service-card-title">Happy Customs</h3>
+            <p class="service-card-desc">Personalised car modifications, wrapping, LED upgrades and custom accessory fits.</p>
+            <div class="service-card-tags">
+              <span>Wrapping</span><span>LED</span><span>Mods</span>
+            </div>
+            <a href="#" class="service-card-link">Explore <span class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ OUR AIM ══════════════════ -->
+    <section class="aim-section" id="aim">
+      <div class="container aim-inner">
+        <div class="aim-text" data-aos="fade-right">
+          <span class="section-tag">Our Aim</span>
+          <h2 class="section-title">Reliability &amp; <span class="accent">Secure</span> Service — Always.</h2>
+          <p>AutoMob 24/7 was born from a simple belief: every automobile owner deserves fast, trustworthy help — day or night, city or highway. We connect you with verified professionals in minutes.</p>
+          <ul class="aim-list">
+            <li><span class="material-symbols-outlined">check_circle</span> Verified &amp; background-checked service providers</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Real-time GPS tracking on every job</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Transparent pricing — no hidden charges</li>
+            <li><span class="material-symbols-outlined">check_circle</span> 24/7 emergency support line</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Reducing threats to road safety</li>
+          </ul>
+        </div>
+        <div class="aim-visual" data-aos="fade-left">
+          <div class="aim-card-stack">
+            <div class="aim-stat-card" style="--delay:0s">
+              <span class="material-symbols-outlined">verified_user</span>
+              <div>
+                <strong>10,000+</strong>
+                <span>Verified Providers</span>
+              </div>
+            </div>
+            <div class="aim-stat-card" style="--delay:0.15s">
+              <span class="material-symbols-outlined">speed</span>
+              <div>
+                <strong>25 min</strong>
+                <span>Avg. Response Time</span>
+              </div>
+            </div>
+            <div class="aim-stat-card" style="--delay:0.3s">
+              <span class="material-symbols-outlined">thumb_up</span>
+              <div>
+                <strong>98%</strong>
+                <span>Customer Satisfaction</span>
+              </div>
+            </div>
+            <div class="aim-stat-card" style="--delay:0.45s">
+              <span class="material-symbols-outlined">location_on</span>
+              <div>
+                <strong>200+</strong>
+                <span>Cities Covered</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ HOW IT WORKS ══════════════════ -->
+    <section class="section how-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Simple Process</span>
+          <h2 class="section-title">How It <span class="accent">Works</span></h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card" data-aos="fade-up" data-delay="0">
+            <div class="step-num">01</div>
+            <div class="step-icon"><span class="material-symbols-outlined">login</span></div>
+            <h4 class="step-title">Login</h4>
+            <p class="step-desc">Register or sign in as User, Garage, Tow Provider, or Admin in seconds.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"><span class="material-symbols-outlined">chevron_right</span></div>
+          <div class="step-card" data-aos="fade-up" data-delay="150">
+            <div class="step-num">02</div>
+            <div class="step-icon"><span class="material-symbols-outlined">location_on</span></div>
+            <h4 class="step-title">Share Location</h4>
+            <p class="step-desc">Instant geolocation pinpointing for the fastest possible response team dispatch.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"><span class="material-symbols-outlined">chevron_right</span></div>
+          <div class="step-card" data-aos="fade-up" data-delay="300">
+            <div class="step-num">03</div>
+            <div class="step-icon"><span class="material-symbols-outlined">home_repair_service</span></div>
+            <h4 class="step-title">Choose Service</h4>
+            <p class="step-desc">Select from towing, repair, car wash, petrol, or roadside assistance.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"><span class="material-symbols-outlined">chevron_right</span></div>
+          <div class="step-card" data-aos="fade-up" data-delay="450">
+            <div class="step-num">04</div>
+            <div class="step-icon"><span class="material-symbols-outlined">local_shipping</span></div>
+            <h4 class="step-title">Get Help</h4>
+            <p class="step-desc">Track your provider on live map. Help arrives fast — you stay safe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ VALUES ══════════════════ -->
+    <section class="values-section">
+      <div class="container">
+        <div class="values-grid">
+          <div class="value-card" data-aos="zoom-in" data-delay="0">
+            <div class="value-icon">😊</div>
+            <h3>Happy Customer</h3>
+            <p>Every interaction ends with a smile. Your satisfaction drives everything we build.</p>
+          </div>
+          <div class="value-card" data-aos="zoom-in" data-delay="150">
+            <div class="value-icon">📈</div>
+            <h3>Growing Startups</h3>
+            <p>We empower local garages and tow providers to grow their business with our platform.</p>
+          </div>
+          <div class="value-card" data-aos="zoom-in" data-delay="300">
+            <div class="value-icon">❤️</div>
+            <h3>Caring Career</h3>
+            <p>Building meaningful careers for thousands of service professionals across India.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ EMERGENCY CTA ══════════════════ -->
+    <section class="emergency-section">
+      <div class="container emergency-inner">
+        <div class="emergency-text" data-aos="fade-right">
+          <div class="emergency-badge">🚨 Critical Emergency?</div>
+          <h2>Feel Safe &amp;<br/><span>Secure With Us</span></h2>
+          <p>Direct emergency dispatch for immediate towing or mechanical assistance.<br/>Humanity first — reducing road threats, keeping you safe.</p>
+        </div>
+        <div class="emergency-actions" data-aos="fade-left">
+          <button class="btn-emergency" onclick="window.location='tel:+919876543210'">
+            <span class="material-symbols-outlined">call</span>
+            Call Tow Service
+          </button>
+          <button class="btn-emergency btn-emergency-secondary" onclick="openLoginModal('user')">
+            <span class="material-symbols-outlined">person_pin_circle</span>
+            Request Mechanic
+          </button>
+          <div class="emergency-note">
+            <span class="ping-dot"></span> Emergency teams on standby 24/7
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ FAQ ══════════════════ -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked <span class="accent">Questions</span></h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">How does AutoMob 24/7 help during road emergencies?
+              <span class="material-symbols-outlined faq-arrow">expand_more</span>
+            </div>
+            <div class="faq-a">We connect you instantly with verified tow trucks, mechanics, and roadside helpers near your GPS location. Average response time is under 25 minutes. Humanity first — we reduce road threats and keep you safe.</div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">Are service providers verified and reliable?
+              <span class="material-symbols-outlined faq-arrow">expand_more</span>
+            </div>
+            <div class="faq-a">Yes. Every mechanic, tow driver, and garage partner goes through rigorous background checks, certification verification, and regular quality audits. Reliability &amp; Secure is our core promise.</div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">How do I register as a garage or tow service provider?
+              <span class="material-symbols-outlined faq-arrow">expand_more</span>
+            </div>
+            <div class="faq-a">Click "Garage Login" or "Tow Provider" from the login section, then register your business. Our team reviews and approves your account within 24 hours. Grow your startup with AutoMob!</div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">Is AutoMob available in my city?
+              <span class="material-symbols-outlined faq-arrow">expand_more</span>
+            </div>
+            <div class="faq-a">We currently operate in 200+ cities across India with rapid expansion. Use the search bar to check service availability near your location in real time.</div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">How is the pricing calculated?
+              <span class="material-symbols-outlined faq-arrow">expand_more</span>
+            </div>
+            <div class="faq-a">Pricing is transparent and shown upfront before you confirm any booking. No hidden charges. You pay what you see — distance, service type, and time of day are factored in clearly.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ ABOUT ══════════════════ -->
+    <section class="section about-section" id="about">
+      <div class="container about-inner">
+        <div class="about-text" data-aos="fade-right">
+          <span class="section-tag">About Us</span>
+          <h2 class="section-title">AutoMob <span class="accent">24/7</span> — Born on the Road</h2>
+          <p>We started with one question: <em>"What if your car breaks down at midnight on a highway?"</em> AutoMob 24/7 is the answer. We connect automobile owners with a trusted network of garages, tow providers, petrol pumps, and roadside heroes — all in one app.</p>
+          <p>Our mission: <strong>Reduce road threats, provide humanity's help, and make every driver feel safe and secure.</strong> We are building India's most caring automobile ecosystem — where happy customers, growing startups, and caring careers all thrive together.</p>
+          <button class="btn-primary" onclick="openLoginModal('user')">Join AutoMob Today</button>
+        </div>
+        <div class="about-visual" data-aos="fade-left">
+          <div class="about-badge-grid">
+            <div class="about-badge"><span class="material-symbols-outlined">verified</span> ISO Certified</div>
+            <div class="about-badge"><span class="material-symbols-outlined">security</span> Data Secure</div>
+            <div class="about-badge"><span class="material-symbols-outlined">support_agent</span> 24/7 Support</div>
+            <div class="about-badge"><span class="material-symbols-outlined">public</span> Pan India</div>
+            <div class="about-badge"><span class="material-symbols-outlined">star</span> 4.8 Rated</div>
+            <div class="about-badge"><span class="material-symbols-outlined">groups</span> 50K+ Users</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo footer-logo">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">Auto<span class="logo-accent">Mob</span></span>
+          <span class="logo-tag">24/7</span>
+        </div>
+        <p>Engineering excellence in automobile logistics and roadside concierge. We care — so you never face the road alone.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Website"><span class="material-symbols-outlined">public</span></a>
+          <a href="#" aria-label="Share"><span class="material-symbols-outlined">share</span></a>
+          <a href="#" aria-label="Community"><span class="material-symbols-outlined">hub</span></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Platform</h5>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Fleet Solutions</a>
+          <a href="#">Partner Program</a>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Help</h5>
+          <a href="#">Emergency Contact</a>
+          <a href="#">Find a Garage</a>
+          <a href="#">Tow Support</a>
+          <a href="#">Petrol Pump</a>
+        </div>
+        <div class="footer-col">
+          <h5>Login As</h5>
+          <a href="#" onclick="openLoginModal('user')">User</a>
+          <a href="#" onclick="openLoginModal('garage')">Garage</a>
+          <a href="#" onclick="openLoginModal('tow')">Tow Provider</a>
+          <a href="#" onclick="openLoginModal('admin')">Admin</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AutoMob 24/7. All rights reserved.</span>
+      <span class="footer-status"><span class="ping-dot"></span> Service Operational</span>
+    </div>
+  </footer>
+
+  <!-- Floating Emergency FAB -->
+  <button class="fab-emergency" id="fab" onclick="openLoginModal('emergency')" title="Emergency Help">
+    <span class="material-symbols-outlined">emergency_share</span>
+    <span class="fab-ping"></span>
+  </button>
+
+  <!-- ══════════════════ LOGIN MODAL ══════════════════ -->
+  <div class="modal-backdrop" id="modal-backdrop" onclick="closeLoginModal()"></div>
+  <div class="modal" id="login-modal">
+    <button class="modal-close" onclick="closeLoginModal()">&times;</button>
+    <div class="modal-icon" id="modal-icon">👤</div>
+    <h3 class="modal-title" id="modal-title">User Login</h3>
+    <p class="modal-sub" id="modal-sub">Access your AutoMob dashboard</p>
+    <form class="modal-form" onsubmit="return false">
+      <div class="form-group">
+        <label>Email / Phone</label>
+        <input type="text" placeholder="Enter email or mobile number" />
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" />
+      </div>
+      <button type="submit" class="btn-primary w-full" id="modal-btn">Login</button>
+      <div class="modal-footer-links">
+        <a href="#">Forgot Password?</a>
+        <a href="#">Register Now</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
