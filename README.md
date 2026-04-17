@@ -1,2 +1,2 @@
 # startup-project
-this is our startup building idea!!! growing together 
+this is our startup building idea!!! growing together.
