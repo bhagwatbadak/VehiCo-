@@ -25,13 +25,7 @@
   <div class="cursor" id="cursor"></div>
   <div class="cursor-follower" id="cursor-follower"></div>
 
-  <!-- Top Alert Bar -->
-  <div class="alert-bar">
-    <span class="material-symbols-outlined">emergency_share</span>
-    Emergency Towing Available 24/7 — Call Now: <strong>+91 98765 43210</strong>
-    <span class="ping-dot"></span>
-  </div>
-
+ 
   <!-- Header / Nav -->
   <header class="header" id="header">
     <div class="container header-inner">
@@ -48,7 +42,7 @@
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
       <div class="header-actions">
-        <button class="btn-outline" onclick="openLoginModal('user')">Login</button>
+        <!-- <button class="btn-outline" onclick="openLoginModal('user')">Login</button> -->
         <button class="btn-primary" onclick="openLoginModal('emergency')">
           <span class="material-symbols-outlined">emergency</span> SOS
         </button>
@@ -67,7 +61,7 @@
     <a href="#about" class="mobile-nav-link" onclick="closeMobileNav()">About</a>
     <a href="#faq" class="mobile-nav-link" onclick="closeMobileNav()">FAQ</a>
     <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()">Contact</a>
-    <button class="btn-primary mt-8" onclick="openLoginModal('user'); closeMobileNav()">Login</button>
+    <button class="btn-primary mt-8" onclick="openLoginModal('user'); closeMobileNav()">Login</button> 
   </div>
   <div class="overlay" id="overlay" onclick="closeMobileNav()"></div>
 
@@ -120,12 +114,12 @@
 
         <!-- Search Bar -->
         <div class="search-bar animate-fade-up" style="animation-delay:1s">
-          <span class="material-symbols-outlined search-icon">search</span>
-          <input type="text" class="search-input" placeholder="Find garages, tow trucks, petrol pumps near you..." />
-          <button class="search-location-btn" title="Detect Location">
+          <!-- <span class="material-symbols-outlined search-icon">search</span>
+          <input type="text" class="search-input" placeholder="Find garages, tow trucks, petrol pumps near you..." /> -->
+          <!-- <button class="search-location-btn" title="Detect Location">
             <span class="material-symbols-outlined">my_location</span>
           </button>
-          <button class="search-btn">Search Now</button>
+          <button class="search-btn">Search Now</button> -->
         </div>
       </div>
 
@@ -365,29 +359,7 @@
       </div>
     </section>
 
-    <!-- ══════════════════ EMERGENCY CTA ══════════════════ -->
-    <section class="emergency-section">
-      <div class="container emergency-inner">
-        <div class="emergency-text" data-aos="fade-right">
-          <div class="emergency-badge">🚨 Critical Emergency?</div>
-          <h2>Feel Safe &amp;<br/><span>Secure With Us</span></h2>
-          <p>Direct emergency dispatch for immediate towing or mechanical assistance.<br/>Humanity first — reducing road threats, keeping you safe.</p>
-        </div>
-        <div class="emergency-actions" data-aos="fade-left">
-          <button class="btn-emergency" onclick="window.location='tel:+919876543210'">
-            <span class="material-symbols-outlined">call</span>
-            Call Tow Service
-          </button>
-          <button class="btn-emergency btn-emergency-secondary" onclick="openLoginModal('user')">
-            <span class="material-symbols-outlined">person_pin_circle</span>
-            Request Mechanic
-          </button>
-          <div class="emergency-note">
-            <span class="ping-dot"></span> Emergency teams on standby 24/7
-          </div>
-        </div>
-      </div>
-    </section>
+   
 
     <!-- ══════════════════ FAQ ══════════════════ -->
     <section class="section faq-section" id="faq">
@@ -531,7 +503,40 @@
       </div>
     </form>
   </div>
+   <!-- Top Alert Bar -->
+  <div class="alert-bar">
+    <span class="material-symbols-outlined">emergency_share</span>
+    Emergency Towing Available 24/7 — Call Now: <strong>+91 98765 43210</strong>
+    <span class="ping-dot"></span>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+ <!-- ══════════════════ EMERGENCY CTA ══════════════════ -->
+    <!-- <section class="emergency-section">
+      <div class="container emergency-inner">
+        <div class="emergency-text" data-aos="fade-right">
+          <div class="emergency-badge">🚨 Critical Emergency?</div>
+          <h2>Feel Safe &amp;<br/><span>Secure With Us</span></h2>
+          <p>Direct emergency dispatch for immediate towing or mechanical assistance.<br/>Humanity first — reducing road threats, keeping you safe.</p>
+        </div>
+        <div class="emergency-actions" data-aos="fade-left">
+          <button class="btn-emergency" onclick="window.location='tel:+919876543210'">
+            <span class="material-symbols-outlined">call</span>
+            Call Tow Service
+          </button>
+          <button class="btn-emergency btn-emergency-secondary" onclick="openLoginModal('user')">
+            <span class="material-symbols-outlined">person_pin_circle</span>
+            Request Mechanic
+          </button>
+          <div class="emergency-note">
+            <span class="ping-dot"></span> Emergency teams on standby 24/7
+          </div>
+        </div>
+      </div>
+    </section> -->
