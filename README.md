@@ -4,4 +4,7 @@ this is our startup building idea!!! growing together.
 # Teacher
 bhagwat badak 
 # student 
-delta alfa
+delta alfa beta gamma 
+
+#manager
+sanket badakh
